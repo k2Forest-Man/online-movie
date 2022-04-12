@@ -146,7 +146,7 @@ h6 {
     "my-header my-header my-header"
     "my-aside my-main my-main"
     "my-aside my-main my-main";
-  grid-template-columns: repeat(auto-fit, mimmax(12rem, 1fr));
+  grid-template-columns: repeat(min-content, mimmax(12rem, 1fr));
 }
 
 /* header */
@@ -231,6 +231,18 @@ h6 {
   border-radius: 50%;
 }
 
+/* aside */
+
+.aside {
+  min-width: 34.7rem;
+}
+
+/* my-display */
+
+.my-display {
+  width: 96.2rem;
+}
+
 .main-display-trailer {
   width: 100%;
   height: 20.2rem;
@@ -244,7 +256,6 @@ h6 {
   background-position: center;
   border-radius: 1.6rem;
   padding-left: 1.9rem;
-  margin-bottom: 3.5rem;
 }
 
 .main-display-views {
@@ -326,4 +337,190 @@ h6 {
   width: 2rem;
   height: 1.6rem;
   cursor: pointer;
+}
+
+/* trending */
+
+.trending {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-item {
+  width: 45rem;
+  height: 25.1rem;
+  background-image: url(../img/tranding-item.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.6rem;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.trending-plash {
+  position: absolute;
+  top: 1.9rem;
+  left: 1.9rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 114%;
+  background: rgba(255, 255, 255, 0.3);
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending-footer {
+  padding: 1rem 1.8rem;
+  width: 100%;
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.trending-footer-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.button-play-tren {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.trending-title {
+  margin-right: 10.4rem;
+}
+
+.trending-header {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.trending-date {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.trending-time {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 1.6rem;
+  background: var(--basic-white);
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 114%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* popular */
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-item {
+  width: 28.6rem;
+  height: 19.2rem;
+  background-image: url(../img/netflix.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.6rem;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.popular-footer {
+  padding: 1rem 1.8rem;
+  width: 100%;
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  width: 100%;
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.popular-footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.play-popular-wrap {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.button-play-popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-header {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.popular-date {
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 113%;
+}
+
+.popular-rating {
+  display: flex;
+  width: 2.8rem;
+  height: 1.2rem;
+}
+
+.popular-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.4rem;
+}
+
+.popular-rating span {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
 }
